@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pixel Art Maker!</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="title__pixel">Lab: Pixel Art Maker</h1>
+			<h2 class="grid__heading">Choose Grid Size</h2>
+			<form class="form__grid">
+				<div class="input__container">
+					<label for="height" class="input__label">Grid Height:</label>
+					<input type="number" id="input__height" name="height" value="1" min="1"> 
+				</div>
+				<div class="input__container">
+					<label for="width" class="input__label">Grid Width:</label>
+					<input type="number" id="input__width" name="width" value="1" min="1">
+				</div>
+				<input type="submit" id="input__submit">
+			</form>
+			<h2 class="pick-color">Pick A Color</h2>
+			<input type="color" id="picker__color">
+			<h2 class="canvas-heading">Designed Canvas</h2>
+			<table id="table__canvas"></table>
+		</div>
+		
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/pixelmakr.js"></script>
+	</body>
+</html>
